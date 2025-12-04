@@ -9,7 +9,7 @@
     <h1>Cooking Recepies</h1>
     <h2>Login Page</h2>
 
-    <form action="./homepage.html" method="get">
+    <form >
         <table>
             <tr>
                 <th></th>
@@ -21,7 +21,7 @@
                     <label for="username">Username:</label>
                 </td>
                 <td>
-                    <input type="text" name="username" required placeholder="Enter your UserName">
+                    <input type="text" name="username" id="username" required placeholder="Enter your UserName">
                 </td>
             </tr>
 
@@ -30,14 +30,14 @@
                     <label for="Password">Password:</label>
                 </td>
                 <td>
-                    <input type="password" name="Password" id="" required placeholder="Enter you password">
+                    <input type="password" name="Password" id="password" required placeholder="Enter you password">
                 </td>
             </tr>
 
             <tr>
                 <td></td>
                 <td>
-                    <input type="submit" name="login" value="login">
+                    <input type="button" onclick="loginUser()" value="login">
                 </td>
             </tr>
         </table>
@@ -46,7 +46,6 @@
     <br>
 
     <p>Don't have an account? <a href="./signuppage.html">Signup</a></p>
-
-    
+    <script src="./script/login.js"></script>
 </body>
 </html>
